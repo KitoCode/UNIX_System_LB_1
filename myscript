@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "Установка новой даты"
+echo "Введите новое время в формате 15 SEP 2015 16:15:00"
+read dddd
+sudo date -s "$dddd"
+echo "Вывод настоящего времени $(date '+%d-%m-%Y_%H-%M-%S')"
+mkdir res
+touch res/fully_res.txt
+echo"Время проведения операции записано в текстовый файл"
+date +%H:%M:%S > res/fully_res.txt
