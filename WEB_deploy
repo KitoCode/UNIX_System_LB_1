@@ -1,0 +1,5 @@
+sudo apt install net-tools
+sudo apt install apache2
+sudo service apache2 stop
+sudo nautilus
+sudo service apache2 start
